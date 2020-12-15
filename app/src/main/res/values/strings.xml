@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AA app</string>
+    <string name="app_name">NeTTweaak</string>
     <string name="host">Host</string>
     <string name="port">Port</string>
     <string name="defaultPort">22</string>

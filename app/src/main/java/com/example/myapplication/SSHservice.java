@@ -1,4 +1,4 @@
-package com.example.aaapp;
+package com.example.myapplication;
 
 import android.app.Service;
 import android.content.Context;
@@ -26,8 +26,7 @@ public class SSHservice extends Service {
     public SSHservice() {
     }
 
-    private static final String TAG =
-            "com.aaapp.SSHservice";
+    private static final String TAG ="com.aaapp.SSHservice";
 
     @Override
     public void onCreate() {
@@ -54,7 +53,7 @@ public class SSHservice extends Service {
         System.setProperty(key, val);
 
         //SSH
-        SshClient client = SshClient.setUpDefaultClient();
+        final SshClient client = SshClient.setUpDefaultClient();
         client.setForwardingFilter(AcceptAllForwardingFilter.INSTANCE);
         client.start();
 

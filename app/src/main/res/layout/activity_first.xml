@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/bgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="270dp"
+        android:layout_height="413dp"
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".8">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="@string/host"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?attr/textColor"
+            android:textColorHint="?attr/metaTextColor"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/portField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="@string/port"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?attr/textColor"
+            android:textColorHint="?attr/metaTextColor"
+            app:layout_constraintHorizontal_bias="0.5"
+
+            app:layout_constraintWidth_percent=".8"
+            tools:text="@string/defaultPort" />
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?attr/textColor"
+            android:textColorHint="?attr/metaTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/passwordField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portField"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="?attr/textColor"
+            android:textColorHint="?attr/metaTextColor"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="194dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="69dp"
+            android:layout_marginBottom="373dp"
+            android:background="#0175D1"
+            android:onClick="sendMessage"
+            android:text="@string/button_send"
+            android:textColor="@android:color/background_light"
+            tools:text="@string/button_send" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

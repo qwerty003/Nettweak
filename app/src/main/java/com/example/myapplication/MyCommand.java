@@ -1,4 +1,4 @@
-package com.example.aaapp;
+package com.example.myapplication;
 
 import org.apache.sshd.server.Environment;
 import org.apache.sshd.server.ExitCallback;
